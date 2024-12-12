@@ -1,7 +1,6 @@
 # **Serviço de Usuário/Registro**
 
-### Esse serviço nasceu a principio como um serviço de registro somente, mas após o uso da massa cinzenta tomei a decisão de que ele vai se tornar o serviço de usuário, até porque acredito que o fluxo de usuário não
-será massivo, dessa forma, não se faz necessário tanta distribuição entre os sistemas!
+Esse serviço nasceu a principio como um serviço de registro somente, mas após o uso da massa cinzenta tomei a decisão de que ele vai se tornar o serviço de usuário, até porque acredito que o fluxo de usuário não será massivo, dessa forma, não se faz necessário tanta distribuição entre os sistemas!
 
 # Responsabilidades:
 
