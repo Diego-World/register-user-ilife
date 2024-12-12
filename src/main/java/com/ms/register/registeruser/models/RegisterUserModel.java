@@ -4,27 +4,27 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.UUID;
+
 /* uniqueConstraints = {@UniqueConstraint(columnNames = {"REU_STR_EMAIL"})} */
 @Entity
-@Table(name = "TB_REGISTER_USER")
+@Table(name = "TB_USERS")
 public class RegisterUserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "REU_UUID_ID")
+    @Column(name = "USE_UUID_ID")
     private UUID id;
-    @Column(name = "REU_STR_NAME", nullable = false)
+    @Column(name = "USE_STR_NAME", nullable = false)
     private String name;
-    @Column(name = "REU_STR_EMAIL", nullable = false)
+    @Column(name = "USE_STR_EMAIL", nullable = false)
     private String email;
-    @Column(name = "REU_DATE_BIRTH", nullable = false, columnDefinition = "DATE")
+    @Column(name = "USE_DATE_BIRTH", nullable = false, columnDefinition = "DATE")
     private LocalDate birth;
-    @Column(name = "REU_STR_PASSWORD", nullable = false)
+    @Column(name = "USE_STR_PASSWORD", nullable = false)
     private String password;
-    @Column(name = "REU_STR_CONFPASSWORD", nullable = false)
+    @Column(name = "USE_STR_CONFPASSWORD", nullable = false)
     private String confirmPassword;
-    @Column(name = "REU_DATE_REGISTERDATE", nullable = false)
+    @Column(name = "USE_DATE_REGISTERDATE", nullable = false)
     private LocalDateTime registerDate;
 
     public UUID getId() {

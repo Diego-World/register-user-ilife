@@ -22,11 +22,6 @@ public class RegisterController {
         this.registerUserService = registerUserService;
     }
 
-    @RequestMapping("/pong")
-    public String pingPong(){
-        return "Ping-pong";
-    }
-
    @PostMapping("")
     public ResponseEntity<String> registerNewUser(@Valid @RequestBody RegisterUserDto registerUserDto) {
         try {
