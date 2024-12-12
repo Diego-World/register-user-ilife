@@ -3,9 +3,9 @@
 ### Esse serviço nasceu a principio como um serviço de registro somente, mas após o uso da massa cinzenta tomei a decisão de que ele vai se tornar o serviço de usuário, até porque acredito que o fluxo de usuário não
 será massivo, dessa forma, não se faz necessário tanta distribuição entre os sistemas!
 
-#Responsabilidades:
+# Responsabilidades:
 
-##1º Registrar um usuário
+## 1º Registrar um usuário
 
 ### Através do formulário de login o serviço recebe nome, email, data de nascimento e senha. No próprio front-end é válidado se o usuário tem pelo menos 16 anos, se a senha segue os requisitos que eu defini e
 se o email é válido. No Back-end eu válido se a senha e sua confirmação conferem (Esqueci de fazer no front) e se o usuário já existe no banco pelo email. Caso tudo esteja de acordo o usuário é salvo
